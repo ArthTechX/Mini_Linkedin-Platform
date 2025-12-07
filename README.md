@@ -1,4 +1,6 @@
-# Mini LinkedIn-like Community Platform
+# Mini Mini LinkedIn-like Community Platform
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Deploy: Vercel](https://img.shields.io/badge/deploy-vercel-000000?logo=vercel&logoColor=white)](https://vercel.com) [![Project Status](https://img.shields.io/badge/status-active-green.svg)]()
 
 A modern, full-stack social networking platform built with Next.js, React, Firebase, MongoDB, and Express.js. This application provides essential LinkedIn-like features including user authentication, profile management, and a social feed for sharing posts.
 
@@ -93,7 +95,7 @@ Experience the platform: [Mini-Linkedin-Platform](https://mini-linkedin-platform
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/ArthTechX/Mini_Linkedin-Platform.git
 cd mini-linkedin-platform
 ```
 
@@ -123,8 +125,7 @@ NEXT_PUBLIC_FIREBASE_APP_ID=your-app-id
 #### Backend Environment
 Create a `.env` file in the `server` directory:
 ```env
-MONGODB_URI=mongodb://localhost:27017/mini-linkedin
-PORT=5000
+MONGODB_URI=
 ```
 
 ### 4. Firebase Setup
@@ -352,6 +353,54 @@ mini-linkedin-platform/
 3. Commit your changes (`git commit -am 'Add new feature'`)
 4. Push to the branch (`git push origin feature/new-feature`)
 5. Create a Pull Request
+
+## 🧑‍💻 Developer Quick Start
+
+- **Clone:**
+
+```powershell
+git clone https://github.com/ArthTechX/Mini_Linkedin-Platform.git
+cd mini-linkedin-platform
+```
+
+- **Install frontend deps:**
+
+```powershell
+npm install
+```
+
+- **Install backend deps:**
+
+```powershell
+npm run server:install
+```
+
+- **Run (development):**
+
+```powershell
+# Start backend (from project root)
+npm run server
+
+# In a separate terminal, start the frontend
+npm run dev
+```
+
+- **Environment checklist:**
+	- Create `.env.local` (root) with Firebase config and `NEXT_PUBLIC_API_URL`.
+	- Create `server/.env` with `MONGODB_URI` and `PORT`.
+
+## 📝 Changelog (high level)
+
+- v0.1.0 — Initial public release with core feed, profiles, and auth.
+- v0.2.0 — (TBD) Add search, upload improvements, and UX polish.
+
+Feel free to add a `CHANGELOG.md` with more granular notes.
+
+## 📬 Contact / Support
+
+- **Author:** ArthTechX
+- **Repo issues:** Use the repository Issues tab to report bugs or request features.
+- **Email:** add-your-email@example.com (replace with preferred contact)
 
 ## License
 
